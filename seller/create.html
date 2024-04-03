@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Organics</title>
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body class="h-[100vh] w-full flex flex-col items-center justify-center bg-slate-100 font-[poppins]">
+
+    <h2 class="text-center text-[#130f40] text-[30px] my-5 font-bold">Organics</h2>
+    <div class="form-wrapper w-11/12 lg:w-4/12 bg-white p-10 rounded-lg shadow-lg">
+
+    <h2 class="text-[22px] mb-4 text-center">Seller Account</h2>
+    <div class="login-form">
+
+        <form action="localhost:27017/hi_organic_backend" method="post" class="flex flex-col gap-5">
+            <input type="text" name="username" required placeholder="Create Username" 
+            class="rounded-md text-[14px] border-0 caret-gray-300 outline-0 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#ff7800] px-2 py-3">
+
+            <input type="text" name="name" required placeholder="Enter your name" 
+            class="rounded-md text-[14px] border-0 caret-gray-300 outline-0 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#ff7800] px-2 py-3">
+
+            <input type="email" name="email" required placeholder="Enter E-mail" 
+            class="rounded-md text-[14px] border-0 caret-gray-300 outline-0 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#ff7800] px-2 py-3">  
+
+            <input type="password" required placeholder="Create Password" 
+            class="rounded-md text-[14px] border-0 caret-gray-300 outline-0 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#ff7800] px-2 py-3">
+
+            <input type="tel" name="phone" required placeholder="Enter phone number" 
+            class="rounded-md text-[14px] border-0 caret-gray-300 outline-0 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#ff7800] px-2 py-3">
+
+            <input type="text" name="adress" required placeholder="Enter your adress" 
+            class="rounded-md text-[14px] border-0 caret-gray-300 outline-0 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#ff7800] px-2 py-3">
+
+            <button type="submit" class="bg-[#ff7800] text-[14px] font-bold hover:bg-orange-400 ease-in duration-200 w-full text-white py-2 rounded-md">Create account</button>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
